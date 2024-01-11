@@ -1,11 +1,9 @@
 body{
-    background-color: #B7B6C2;
+    background-color: #393E41;
 }
 
 .parent {
-  background-color: #B6C2D9;
-  height: 100%;
-  width: 100%;
+  background-color: #D3D0CB;
   display: flex;
   justify-content: space-between;
   padding-top: 10%;
@@ -13,7 +11,7 @@ body{
 /* Add a black background color to the top navigation */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #5F686D;
   position: absolute;
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -42,8 +40,7 @@ body{
   }
 
 
-/* Control the left side */
-.split_left {
+.block1 {
   left: 0%;
   height: 50%;
   width: 50%;
@@ -51,20 +48,31 @@ body{
   justify-content: start;
 }
 
-/* Control the right side */
-.split_right {
+.block2 {
   right: 0;
   z-index: 2;
+  height: 50%;
+  width: 50%;
   top: 0;
 }
 
-/* If you want the content centered horizontally and vertically */
+.block3{
+  background-color: #AA5042;
+}
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+}
+
 .centered {
   text-align: center;
 }
 
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+.centered img{
+  width: 100px;
+  border-radius: 75%;
 }
