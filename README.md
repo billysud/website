@@ -1,1 +1,1 @@
-This repository hold the code to my website! 
+This repository holds the code to my website! 
