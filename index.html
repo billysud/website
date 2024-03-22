@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <!-- Include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -40,7 +40,7 @@
             <p>CSS</p>
         </div>
         <div class="skill">
-            <img src="images/JS.png" alt="Javascript">
+            <img src="images/js.png" alt="Javascript">
             <p>Javascript</p>
         </div>
         <div class="skill">
@@ -65,18 +65,33 @@
     <div class="projects" id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Name</h3>
-            <p>Type</p>
-            <p>Description.</p>
-            <a href="#" class="live">Link</a>
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Music Notes</h3>
+                    <p>Web Application</p>
+                    <p>An ElectronJS application that lets users who want to write music get organized. It comes with a custom file system and lets users upload an audio file and write notes in timestamps wherever in the file! I worked on blueprinting all the code and designing the struture and format of all the functions along with being the scrum master and assigning tasks for my group mates to complete each week. I was also in charge of the Miro planning and presentation boards we used to outline and showcase our plans. There is also extensive end-to-end and unit testing that is in this repository.</p>
+                    <a href="https://github.com/billysud/Music-Notes" class="live">GitHub Repo</a>
+                </div>
+                <img src="images/UI.jpg" alt="Planning UI">
+            </div>
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>SHA-256 hashing and Blockchain</h3>
+                    <p>Embedded Software</p>
+                    <p>A two part project where I wrote code that takes in any type of file smaller than 65KB and returns the SHA-256 hash of it. This was accomplished with techniques such as parallel computing and a finite state machine. The SHA-256 is a cryptographically safe algorithm that uses an known initial hash values and compresses the hashes and combines them with contents from the file. The second part of the project involved modifying the SHA-256 hasher to try 16 nonce values simultaneously to check to see if this fits the ending hash of the previous block to verify the blockchain. Due to academic integrity reasons this code is not public.  </p>
+                    <a href="https://www.canva.com/design/DAF19E_oyKQ/cZMCPJD-Ezg9GL-8fD8QZg/edit?utm_content=DAF19E_oyKQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="live">Presentation</a>
+                </div>
+                <img src="images/fpga.png" alt="verification results">
+            </div>
         </div>
         <!-- Repeat for other projects -->
     </div>
+    
 
     <div class="contact" id="contact">
         <h2>Contact</h2>
         <p> Have any questions or want to contact me? Please fill this out!</p>
-        <form action="#">
+        <form action="https://formsubmit.co/d55823578292dc2acbdec180094c0663" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
@@ -87,7 +102,7 @@
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" type="text"></textarea>
             </div>
             <button type="submit">SUBMIT</button>
         </form>

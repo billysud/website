@@ -75,6 +75,23 @@ header nav ul li a {
   margin: 0 auto 20px; /* Center the image horizontally and add some bottom margin */
 }
 
+.project-content {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.project-info {
+  flex: 1; /* Take remaining space */
+  text-align: left; /* Align text to the left */
+  padding-right: 20px; /* Add some space between image and text */
+}
+
+.project img {
+  max-width: 50%; /* Limit image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 
 .skills ul {
   padding-left: 20px; /* Add padding for better spacing */
