@@ -1,14 +1,10 @@
-/* style.css */
-
-/* Body styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #212121; /* Updated background color */
+  background-color: #212121;
 }
 
-/* Header styles */
 header {
   background-color: #282c34;
   color: #fff;
@@ -39,14 +35,13 @@ header nav ul li a {
   text-decoration: none;
 }
 
-/* Main content styles */
 .about,
 .projects,
 .contact {
   padding: 50px;
-  background-color: #212121; /* Updated background color */
-  color: #CCCCCC; /* Light grey text color */
-  text-align: center; /* Center the content */
+  background-color: #212121; 
+  color: #CCCCCC; 
+  text-align: center; 
 }
 
 .about h2,
@@ -59,69 +54,73 @@ header nav ul li a {
 .about .skills,
 .projects .project,
 .contact form {
-  flex: 1; /* Take up equal space */
-  padding: 0 20px; /* Add padding for better spacing */
+  flex: 1; 
+  padding: 0 20px; 
 }
 
 .about .about-text {
-  color: #CCCCCC; /* Set text color to match the rest */
-  padding: 50px; /* Add padding to match other sections */
+  color: #CCCCCC; 
+  padding: 50px; 
 }
 
 .about img {
-  width: 25%; /* Set the width of the image to 25% of the screen */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensure the image is treated as a block element */
-  margin: 0 auto 20px; /* Center the image horizontally and add some bottom margin */
+  width: 25%;
+  height: auto; 
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .project-content {
   display: flex;
-  flex-direction: row; /* Arrange items horizontally */
-  align-items: center; /* Center items vertically */
+  flex-direction: row; 
+  align-items: center;
 }
 
 .project-info {
-  flex: 1; /* Take remaining space */
-  text-align: left; /* Align text to the left */
-  padding-right: 20px; /* Add some space between image and text */
+  flex: 1; 
+  text-align: left; 
+  padding-right: 20px; 
 }
 
+
 .project img {
-  max-width: 50%; /* Limit image width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 50%; 
+  height: auto;
 }
 
 
 .skills ul {
-  padding-left: 20px; /* Add padding for better spacing */
-  margin-top: 0; /* Reset margin for UL */
+  padding-left: 20px; 
+  margin-top: 0; 
 }
 
 .skills ul li {
-  color: #CCCCCC; /* Same color as text */
+  color: #CCCCCC; 
 }
 
 .skills {
-  text-align: center; /* Center the content */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 .skill {
   display: inline-block;
   margin: 20px;
+  width: 150px; 
 }
 
 .skill img {
-  width: 100px; /* Adjust image size as needed */
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
 .skill p {
-  color: #CCCCCC; /* Same color as text */
+  color: #CCCCCC; 
   margin: 0;
 }
-
 
 .projects .project {
   margin-bottom: 30px;
@@ -129,6 +128,15 @@ header nav ul li a {
 
 .projects .project h3 {
   margin-top: 0;
+}
+
+.project-content {
+  flex-direction: column; 
+}
+
+.project img {
+  max-width: 100%; 
+  margin: 20px auto;
 }
 
 .projects .project a {
@@ -158,7 +166,8 @@ header nav ul li a {
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-  width: 20%;
+  width: 100%;
+  max-width: 500px; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -181,4 +190,43 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .about img {
+    width: 60%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%; 
+    max-width: 100%; 
+  }
+}
+
+@media (min-width: 768px) {
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 50%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    display: block; 
+  }
+
+  .skill {
+    display: block;
+    margin: 20px auto; 
+    width: 100%; 
+  }
+
+  .skill img {
+    width: 70px;
+  }
 }
