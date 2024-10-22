@@ -230,3 +230,15 @@ button[type="submit"]:hover {
     width: 70px;
   }
 }
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Start from the center */
+  transform: translateX(-50%); /* Shift to ensure it starts at the center */
+  width: 0; /* Start with no width */
+  height: 5px;
+  background-color: #007bff; /* Progress bar color */
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
